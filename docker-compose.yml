@@ -1,0 +1,15 @@
+phoenix-api:
+  image: node
+  container_name: phoenix-api
+  restart: always
+  volumes:
+    - /home/stas/phoenix/api:/var/www/app
+  working_dir: "/var/www/app"
+  environment:
+    - VIRTUAL_HOST=phoenix-api.d7.aisnovations.com
+    - VIRTUAL_PORT=3000
+  external_links:
+    - mongodb
+  command: bash -c "npm i pm2 -g && pm2 start pm2.json && pm2 logs"
+  expose:
+    - "3000"

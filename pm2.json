@@ -1,0 +1,12 @@
+{
+    "apps": [{
+            "name": "phoenix-api",
+            "script": "dist/server.js",
+            "watch": ["build.txt"],
+            "watch_options": {
+                "usePolling": true,
+                "interval": 1000
+            }
+        }
+    ]
+}
