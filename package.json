@@ -33,7 +33,7 @@
 		"mysql": "^2.15.0",
 		"mysql-migrations": "^1.0.6",
 		"node-cron": "^1.2.1",
-		"node-fetch": "^1.7.3",
+		"node-fetch": "^2.6.1",
 		"nodemailer": "^4.6.4",
 		"path": "^0.12.7",
 		"request": "^2.87.0",
